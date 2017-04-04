@@ -8,14 +8,27 @@
 # em_esrever
 
 def reverse_str
+    puts "string"
     string = gets.chomp
-    string = string.split('')
-    max = string.length-1
-    newstr = []
+    string = string.chars.reduce { |x, y| y + x } 
+    puts string  
 
-    for i in (0..string.length-1) do
-        newstr.unshift string[i]
-    end
-    puts newstr.join('')
+    # b = string.length - 1
+    # while b >= 0
+    # string += string[b]
+    # b-=1
+    # end
+    # string = string.slice(string.length/2, string.length)
+    # puts string
+    
+    # string = string.split('')
+    # max = string.length-1
+    # newstr = []
+
+    # for i in (0..string.length-1) do
+    #     newstr.unshift string[i]
+    # end
+    # puts newstr.join('')
 end
 reverse_str
+
